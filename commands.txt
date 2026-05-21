@@ -1,0 +1,15 @@
+1. pwd - shows the current directory.
+2. ls - lists files and folders.
+3. cd - changes the current directory.
+4. mkdir - creates a new directory.
+5. touch - creates a new empty file.
+6. cat - displays file contents.
+7. nano - opens a simple text editor.
+8. cp - copies files or folders.
+9. mv - moves or renames files.
+10. rm - deletes files.
+11. rmdir - removes an empty directory.
+12. chmod - changes file permissions.
+13. chown - changes file owner.
+14. grep - searches for text in files.
+15. find - searches for files or folders.
