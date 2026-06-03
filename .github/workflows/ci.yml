@@ -1,0 +1,17 @@
+name: CI workflow
+
+runs-on: ubuntu-latest
+
+on:
+
+push :
+
+jobs:
+
+build:
+
+steps:
+
+-name: checkout code uses: actions/checkout@v4 -name: give execute permission uses: chmod +x system-info.sh -name: Run system-info.sh run: ./system-info.sh -name: final message
+
+run: echo "week 3 CI successful"
