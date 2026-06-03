@@ -1,17 +1,25 @@
-name: CI workflow
-
-runs-on: ubuntu-latest
+name: CI Pipeline
 
 on:
 
-push :
+push:
 
 jobs:
-
-build:
+  
+system-info:
+    
+runs-on: ubuntu-latest
 
 steps:
+ 
+     - name: Checkout Repository
+        uses: actions/checkout@v4
 
--name: checkout code uses: actions/checkout@v4 -name: give execute permission uses: chmod +x system-info.sh -name: Run system-info.sh run: ./system-info.sh -name: final message
+      - name: Make Script Executable
+        run: chmod +x system-info.sh
 
-run: echo "week 3 CI successful"
+      - name: Run System Info Script
+        run: ./system-info.sh
+
+      - name: Success Message
+        run: echo "Week 3 CI Successful"
