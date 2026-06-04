@@ -1,18 +1,14 @@
 name: CI Pipeline
 
 on:
-
-push:
+  push:
 
 jobs:
-  
-systeminfo:
-    
-runs-on: ubuntu-latest
+  systeminfo:
+    runs-on: ubuntu-latest
 
-steps:
- 
-     - name: Checkout Repository
+    steps:
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Make Script Executable
